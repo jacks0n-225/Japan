@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Bild</title>
+  <style>
+    /* Setzt HTML und Body auf volle Höhe und entfernt Standardmargen */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    /* Mit Flexbox den Inhalt (das Bild) horizontal und vertikal zentrieren.
+       Zusätzlich sorgt 'padding' dafür, dass der Abstand zum Rand definiert wird.
+       Der Box-Sizing-Trick sorgt dafür, dass Padding in der Gesamthöhe/Breite enthalten ist. */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;  /* Hier kannst du den gewünschten Rand definieren */
+      box-sizing: border-box;
+    }
+    /* Damit das Bild quadratisch bleibt, kann man (falls nötig) eine feste Größe setzen.
+       Hier wird angenommen, dass das Bild schon quadratisch vorliegt. */
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      /* Alternativ kann man hier auch eine feste Größe angeben, z.B.:
+         width: 300px;
+         height: 300px;
+      */
+    }
+  </style>
+</head>
+<body>
+  <!-- Ersetze "qrcode.jpg" mit dem Pfad zu deinem Bild -->
+  <img src="qrcode.jpg" alt="QR Code">
+</body>
+</html>
