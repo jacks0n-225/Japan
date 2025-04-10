@@ -157,7 +157,7 @@ let cameraPanTargetPos = new THREE.Vector3();
 const keysPressed: { [key: string]: boolean } = {};
 const keyDisplayQueue = new KeyDisplay();
 
-const backgroundAudio = new Audio("sound/For the Broken Hearted.mp3");
+const backgroundAudio = new Audio("sound/._For_the_Broken_Hearted.mp3");
 backgroundAudio.loop = true;
 backgroundAudio.volume = 0.5;
 
