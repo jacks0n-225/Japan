@@ -20,7 +20,10 @@ const num3 = document.getElementById('num3') as HTMLElement;
 let activeSectionIndex: number = 0; // Start: Abschnitt 1 (Index 0)
 let lastScrollPos: number = window.pageYOffset || document.documentElement.scrollTop;
 
-
+/**
+ * Setzt basierend auf dem aktuellen Abschnitt (index) und der Scrollrichtung (direction)
+ * die korrekten Klassen für die Nummern.
+ */
 function setActiveNumber(index: number, direction: 'down' | 'up'): void {
   // Zuerst alle Klassen entfernen:
   [num1, num2, num3].forEach((el) => {
@@ -105,7 +108,7 @@ const observer = new IntersectionObserver(entries => {
     } else {
       // Ansonsten Maske anzeigen
       (cursorMask as HTMLElement).style.display = 'block';
-    
+    }
   });
 }, { threshold: 0.1 });  // threshold anpassen, falls nötig
 
@@ -1407,5 +1410,7 @@ window.addEventListener('load', () => {
 // === Globale Variablen für den weißen Bereich (whitePane) und dessen Startzeitpunkt ===
 let whitePane: THREE.Mesh | null = null;
 let whitePaneStartTime: number = 0;
+
+
 
 
