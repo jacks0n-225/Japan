@@ -20,10 +20,7 @@ const num3 = document.getElementById('num3') as HTMLElement;
 let activeSectionIndex: number = 0; // Start: Abschnitt 1 (Index 0)
 let lastScrollPos: number = window.pageYOffset || document.documentElement.scrollTop;
 
-/**
- * Setzt basierend auf dem aktuellen Abschnitt (index) und der Scrollrichtung (direction)
- * die korrekten Klassen für die Nummern.
- */
+
 function setActiveNumber(index: number, direction: 'down' | 'up'): void {
   // Zuerst alle Klassen entfernen:
   [num1, num2, num3].forEach((el) => {
