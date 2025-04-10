@@ -117,6 +117,7 @@ header {
 .section-header h2 {
   margin: 0;
   font-size: 2rem;
+  color: transparent;
 }
 
 /* Fließtext im Blocksatz */
@@ -127,7 +128,7 @@ header {
 
 .section-text p {
   margin: 0;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
