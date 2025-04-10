@@ -366,7 +366,7 @@ header {
 .game-info {
   position: absolute;
   bottom: 20px;         /* Abstand vom unteren Rand (anpassen nach Bedarf) */
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
   font-size: 1rem;    /* kleine Schriftgröße */
   text-align: center;
